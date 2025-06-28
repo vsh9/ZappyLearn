@@ -94,7 +94,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = ['https://zappy-learn.vercel.app/',]
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
