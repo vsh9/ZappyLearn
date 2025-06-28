@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZappyLearn - AI Worksheet Generator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="floating-shapes">
+            <div class="shape">📚</div>
+            <div class="shape">✏️</div>
+            <div class="shape">🎯</div>
+        </div>
+        
+        <header class="header">
+            <h1 class="logo">ZappyLearn</h1>
+            <p class="tagline">Your AI-Powered Learning Companion</p>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label class="input-label">
+                        <i class="fas fa-smile"></i>
+                        How are you feeling today?
+                    </label>
+                    <div class="mood-input">
+                        <input type="text" id="moodText" class="mood-text" placeholder="Tell us how you're feeling... (e.g., excited, tired, curious)">
+                        <div class="emoji-grid">
+                            <button class="emoji-btn" data-mood="excited">😄</button>
+                            <button class="emoji-btn" data-mood="happy">😊</button>
+                            <button class="emoji-btn" data-mood="calm">😌</button>
+                            <button class="emoji-btn" data-mood="focused">🤓</button>
+                            <button class="emoji-btn" data-mood="tired">😴</button>
+                            <button class="emoji-btn" data-mood="confused">😕</button>
+                            <button class="emoji-btn" data-mood="curious">🤔</button>
+                            <button class="emoji-btn" data-mood="confident">😎</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <i class="fas fa-book"></i>
+                        Choose Your Subject
+                    </label>
+                    <div class="subject-grid">
+                        <button class="subject-btn" data-subject="math">
+                            <i class="fas fa-calculator"></i>
+                            Mathematics
+                        </button>
+                        <button class="subject-btn" data-subject="science">
+                            <i class="fas fa-flask"></i>
+                            Science
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="generate-btn" id="generateBtn">
+                <i class="fas fa-magic"></i>
+                Generate My Worksheet
+            </button>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Creating your personalized worksheet...</p>
+            </div>
+
+            <div class="results" id="results">
+                <div class="motivation-card" id="motivationCard">
+                    <div class="motivation-text" id="motivationText"></div>
+                    <div class="motivation-emoji" id="motivationEmoji"></div>
+                </div>
+
+                <div class="questions-container" id="questionsContainer">
+                    <!-- Questions will be populated here -->
+                </div>
+
+                <button class="pdf-btn" id="pdfBtn">
+                    <i class="fas fa-download"></i>
+                    Download PDF Worksheet
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
