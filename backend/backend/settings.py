@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -82,7 +84,7 @@ DATABASES = {
 }
 
 # API Keys - Add these to your environment variables
-GROQ_API_KEY = os.environ.get('')
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 # CORS settings for frontend
 CORS_ALLOWED_ORIGINS = [
