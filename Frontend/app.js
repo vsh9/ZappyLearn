@@ -3,7 +3,7 @@ class ZappyLearn {
         this.selectedMood = '';
         this.selectedSubject = '';
         this.currentWorksheet = null;
-        this.apiBaseUrl = 'http://localhost:8000'; // Django backend URL
+        this.apiBaseUrl = 'https://zappylearn.onrender.com'; // Django backend URL
         this.initEventListeners();
     }
 
