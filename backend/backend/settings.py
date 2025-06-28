@@ -26,11 +26,12 @@ SECRET_KEY = 'django-insecure-xw^rd!m_vkrh72kr(syqvreljigiin+$7t+q%yfna1q%=$tu5k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 
-                '127.0.0.1',
-                'https://zappy-learn.vercel.app/',
-                'https://zappylearn.onrender.com/',
-                ]
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'zappy-learn.vercel.app',
+    'zappylearn.onrender.com',
+]
 
 
 # Application definition
